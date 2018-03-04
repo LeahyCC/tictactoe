@@ -1,0 +1,92 @@
+/* CSS Browser defualt Reset */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* END - CSS Browser defualt Reset */
+
+/* 
+CSS has been prefixed for browser compatibility
+https://autoprefixer.github.io
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#window {
+  height:100vh;
+  width: 100%;
+
+  position: relative;
+
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#001842), to(#0260f7));
+  background-image: -webkit-linear-gradient(bottom, #001842, #0260f7);
+  background-image: -o-linear-gradient(bottom, #001842, #0260f7);
+  background-image: linear-gradient(to top, #001842, #0260f7);
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.wrapper {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+#game {
+  border: 2px solid white;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#controls {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+#start {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.tile {
+  cursor: pointer;
+  height: 100px;
+  flex: 0 1 auto;
+  /* fallback width */
+  width: 33.333%; 
+  width: calc(100% / 3);
+  border: 1px solid white;
+
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 50px;
+
+  display: block;
+  font-size: 1em;
+  background-color: royalblue;
+  color: white;
+  margin-top: 1rem;
+  float: right;
+}
